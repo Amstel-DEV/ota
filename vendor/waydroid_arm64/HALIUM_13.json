@@ -1,8 +1,33 @@
 {
     "response": [
         {
-            "datetime": 1746840808,
-            "filename": "lineage-20.0-20250510-HALIUM_13-waydroid_arm64-vendor.zip",
+            "datetime": 1748044800,
+            "filename": "/images/vendor/waydroid_arm64/lineage-20.0-20250524-HALIUM_13-waydroid_arm64-vendor.zip",
+            "id": "c78c9f47972d4291338110723e943c440b9aa886be0e5c9d957148c9300e77c7",
+            "romtype": "HALIUM_13",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm64/lineage-20.0-20250524-HALIUM_13-waydroid_arm64-vendor.zip/download",
+            "version": "20.0"
+        },
+        {
+            "datetime": 1747958400,
+            "filename": "/images/vendor/waydroid_arm64/lineage-20.0-20250523-HALIUM_13-waydroid_arm64-vendor.zip",
+            "id": "fc14de584fed388f48ebdb5a1e5e3df8903187ff3a28fd73907756f690b99570",
+            "romtype": "HALIUM_13",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm64/lineage-20.0-20250523-HALIUM_13-waydroid_arm64-vendor.zip/download",
+            "version": "20.0"
+        },
+        {
+            "datetime": 1747440000,
+            "filename": "/images/vendor/waydroid_arm64/lineage-20.0-20250517-HALIUM_13-waydroid_arm64-vendor.zip",
+            "id": "9f17484f6591443c1bdda295ee1c61d848cbf42ea26c604e73277015f2ec2c5b",
+            "romtype": "HALIUM_13",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm64/lineage-20.0-20250517-HALIUM_13-waydroid_arm64-vendor.zip/download",
+            "version": "20.0"
+        },
+        {
+            "datetime": 1746835200,
+            "filename": "/images/vendor/waydroid_arm64/lineage-20.0-20250510-HALIUM_13-waydroid_arm64-vendor.zip",
+            "id": "d7b59aadf8a2db72929fc907b5e2a27d1fdfd8065e25262c36938ab95ed1680a",
             "romtype": "HALIUM_13",
             "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm64/lineage-20.0-20250510-HALIUM_13-waydroid_arm64-vendor.zip/download",
             "version": "20.0"
