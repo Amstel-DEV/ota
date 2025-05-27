@@ -19,3 +19,21 @@ To redirect your Waydroid installation to use the unofficial OTA channel, use th
 ```
 curl -L https://amstel-dev.github.io/ota/android-13-ota_patch.sh | sudo bash
 ```
+
+
+---
+
+## ⚙️ Automated Updates
+
+The OTA JSON manifests for system and vendor builds are automatically updated every 6 hours using a GitHub Actions workflow (`.github/workflows/auto-update.yml`). This workflow runs the `ota_updater.py` script which:
+
+- Fetches the latest Waydroid Android 13 build info from SourceForge RSS feeds.
+- Parses and organizes the builds by architecture, ROM type, and component.
+- Updates the JSON manifests used by the OTA server.
+- Commits and pushes these changes back to this repository automatically.
+
+This automation ensures that the OTA server always serves the latest available builds without manual maintenance.
+
+---
+
+Thank you for using the unofficial Waydroid Android 13 OTA server!
