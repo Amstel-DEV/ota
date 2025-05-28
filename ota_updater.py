@@ -137,7 +137,7 @@ def main():
         for item in items:
             out_item = {
                 "datetime": item["datetime"],
-                "filename": item["filename"],
+                "filename": os.path.basename(item["filename"]),
                 "id": item["id"],
                 "romtype": item["romtype"],
                 "url": item["url"],
@@ -158,6 +158,63 @@ def main():
             json.dump(out_data, f, indent=4)
 
         print(f"Wrote {len(items)} entries to {out_json}")
+
+    # --- 404.html LIST UPDATER ---
+    try:
+        with open("404.html", "r", encoding="utf-8") as f:
+            html = f.read()
+
+        def generate_html_list(grouped, component_type):
+            blocks = []
+            for arch in ARCHS:
+                items = [
+                    item for (ctype, a, _), lst in grouped.items()
+                    if ctype == component_type and a == arch
+                    for item in lst
+                ]
+                if not items:
+                    continue
+
+                # Get latest item per (arch, romtype)
+                latest_per_romtype = {}
+                for item in sorted(items, key=lambda x: x["datetime"], reverse=True):
+                    rt = item["romtype"]
+                    if rt not in latest_per_romtype:
+                        latest_per_romtype[rt] = item
+
+                lines = "\n".join(
+                    f'<li>Lineage-{item["version"]}-{datetime.utcfromtimestamp(item["datetime"]).strftime("%Y%m%d")}-{item["romtype"]}</li>'
+                    for item in latest_per_romtype.values()
+                )
+                block = f'<ul>\n<h4>{arch}</h4>\n{lines}\n</ul>'
+                blocks.append(block)
+            return "\n".join(blocks)
+
+        system_html = generate_html_list(grouped, "system")
+        vendor_html = generate_html_list(grouped, "vendor")
+
+        # Replace system list
+        html = re.sub(
+            r'(<div class="list_system">.*?<div class="container">)(.*?)(</div>)',
+            rf'\1\n{system_html}\n\3',
+            html,
+            flags=re.DOTALL
+        )
+
+        # Replace vendor list
+        html = re.sub(
+            r'(<div class="list_vendor">.*?<div class="container">)(.*?)(</div>)',
+            rf'\1\n{vendor_html}\n\3',
+            html,
+            flags=re.DOTALL
+        )
+
+        with open("404.html", "w", encoding="utf-8") as f:
+            f.write(html)
+
+        print("Updated 404.html with grouped arch-based image lists.")
+    except FileNotFoundError:
+        print("404.html not found — skipping HTML update.")
 
 if __name__ == "__main__":
     main()

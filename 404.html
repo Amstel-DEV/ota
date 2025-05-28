@@ -18,27 +18,52 @@
         span{
             font-weight: 300;
         }
-
-        
-        ul{
-            margin-left: 44px;
-        }
-
+   
         .title{
             text-align: center;
         }
-
+        
         .body {
             padding: 10px;
         }
+        
+        .list_system, .list_vendor {
+            margin: 20px 0;
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                /* padding: 10px; */
+                justify-content: center;
+                cursor: default;
+
+                ul{
+                    padding: 10px;
+                    background: #990033;
+                    color: white;
+                    margin: 5px;
+                    border-radius: 10px;
+                    padding: 15px;
+
+                    li {
+                        margin-left: 22px;
+                        list-style-type:none;
+                    }
+                }
+
+                ul:hover {
+                    background-color: #990033c2;
+                }
+            }
+        }
 
         .foot{
+            bottom: 0;
+            position: fixed;
             text-align: center;
             font-size: small;
-            position: fixed;
             width: 100%;
-            bottom: 0;
-            background-color: gray;
+            color: white;
+            background-color: #990033;
         }
     </style>
 </head>
@@ -60,21 +85,65 @@
             Server Status: <span>OTA server up and running</span>
         </h3>
         <hr>
-        <div class="list">
-            <h3>SYSTEM IMAGE LIST</h3>
-            <ul>
-                <li>Lineage-20.0-20250510-VANILLA</li>
-                <li>Lineage-20.0-20250510-GAPPS</li>
-            </ul>
-            <br>
-            <h3>VENDOR IMAGE LIST</h3>
-            <ul>
-                <li>Lineage-20.0-20250510-MAINLINE</li>
-                <li>Lineage-20.0-20250510-HALIUM_13</li>
-            </ul>
-        </div>
 
-        <hr>
+<div class="list_system">
+<h3>SYSTEM IMAGE LIST</h3>
+<div class="container">
+<ul>
+<h4>waydroid_arm</h4>
+<li>Lineage-20.0-20250523-VANILLA</li>
+<li>Lineage-20.0-20250523-GAPPS</li>
+</ul>
+<ul>
+<h4>waydroid_arm64</h4>
+<li>Lineage-20.0-20250523-VANILLA</li>
+<li>Lineage-20.0-20250523-GAPPS</li>
+</ul>
+<ul>
+<h4>waydroid_arm64_only</h4>
+<li>Lineage-20.0-20250523-GAPPS</li>
+<li>Lineage-20.0-20250523-VANILLA</li>
+</ul>
+<ul>
+<h4>waydroid_x86</h4>
+<li>Lineage-20.0-20250523-VANILLA</li>
+<li>Lineage-20.0-20250523-GAPPS</li>
+</ul>
+<ul>
+<h4>waydroid_x86_64</h4>
+<li>Lineage-20.0-20250523-GAPPS</li>
+<li>Lineage-20.0-20250523-VANILLA</li>
+</ul>
+</div>
+
+<div class="list_vendor">
+<h3>VENDOR IMAGE LIST</h3>
+<div class="container">
+<ul>
+<h4>waydroid_arm</h4>
+<li>Lineage-20.0-20250523-HALIUM_13</li>
+<li>Lineage-20.0-20250523-MAINLINE</li>
+</ul>
+<ul>
+<h4>waydroid_arm64</h4>
+<li>Lineage-20.0-20250523-HALIUM_13</li>
+<li>Lineage-20.0-20250523-MAINLINE</li>
+</ul>
+<ul>
+<h4>waydroid_arm64_only</h4>
+<li>Lineage-20.0-20250523-HALIUM_13</li>
+<li>Lineage-20.0-20250523-MAINLINE</li>
+</ul>
+<ul>
+<h4>waydroid_x86</h4>
+<li>Lineage-20.0-20250523-MAINLINE</li>
+</ul>
+<ul>
+<h4>waydroid_x86_64</h4>
+<li>Lineage-20.0-20250523-MAINLINE</li>
+</ul>
+</div>
+        <br>
         <p>
             <b>NOTE:</b> This server only provides Android 13 Releases, for Android 11 Release please refer to <a href="https://ota.waydro.id" target="_blank">https://ota.waydro.id</a>.
         </p>
