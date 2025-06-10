@@ -1,7 +1,7 @@
 {
     "response": [
         {
-            "datetime": 1749254400,
+            "datetime": 1749225600,
             "filename": "lineage-20.0-20250607-VANILLA-waydroid_arm64_only-system.zip",
             "id": "4bf7d56ed2e36ba360c2c6627b4a2cef840cf67f001557496a0a89208ad89c2e",
             "romtype": "VANILLA",
@@ -9,7 +9,7 @@
             "version": "20.0"
         },
         {
-            "datetime": 1748649600,
+            "datetime": 1748620800,
             "filename": "lineage-20.0-20250531-VANILLA-waydroid_arm64_only-system.zip",
             "id": "176e2e92c4fce6b821729cf8c1c0c84d776a6080b24942c8018c2d3e07caa93b",
             "romtype": "VANILLA",
@@ -17,7 +17,7 @@
             "version": "20.0"
         },
         {
-            "datetime": 1748044800,
+            "datetime": 1748016000,
             "filename": "lineage-20.0-20250524-VANILLA-waydroid_arm64_only-system.zip",
             "id": "067c992a3209cb40c8bdef3097ed3a17c2a54a3e2cc300eeda78d76225f69dc8",
             "romtype": "VANILLA",
