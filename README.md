@@ -17,7 +17,7 @@ To redirect your Waydroid installation to use the unofficial OTA channel, use th
 
 ### 🔧 `android-13-ota_patch.sh`
 ```
-curl -L https://amstel-dev.github.io/ota/android-13-ota_patch.sh | sudo bash
+curl -LO https://amstel-dev.github.io/ota/android-13-ota_patch.sh && chmod +x android-13-ota_patch.sh && sudo ./android-13-ota_patch.sh
 ```
 
 ---
