@@ -1,6 +1,14 @@
 {
     "response": [
         {
+            "datetime": 1751673600,
+            "filename": "lineage-20.0-20250705-GAPPS-waydroid_arm-system.zip",
+            "id": "b030f847788c16e680dc49e1feeef66110e60b228fffe819292ce7a1f9eec1f1",
+            "romtype": "GAPPS",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_arm/lineage-20.0-20250705-GAPPS-waydroid_arm-system.zip/download",
+            "version": "20.0"
+        },
+        {
             "datetime": 1751068800,
             "filename": "lineage-20.0-20250628-GAPPS-waydroid_arm-system.zip",
             "id": "11da3287fe9dde7e03485f321fe855d9bfe8c823cb39cec9169f640626cf5d34",
