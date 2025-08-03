@@ -1,6 +1,14 @@
 {
     "response": [
         {
+            "datetime": 1754179200,
+            "filename": "lineage-20.0-20250803-MAINLINE-waydroid_arm-vendor.zip",
+            "id": "a300505180e4c32355cb7d176663320bf604965e2e183287cf4b230819e45543",
+            "romtype": "MAINLINE",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm/lineage-20.0-20250803-MAINLINE-waydroid_arm-vendor.zip/download",
+            "version": "20.0"
+        },
+        {
             "datetime": 1754092800,
             "filename": "lineage-20.0-20250802-MAINLINE-waydroid_arm-vendor.zip",
             "id": "79849a851f0eaba3fa5fec86f4cc9c7f42029d89875b6a04c8e1efa8c2a1e220",
@@ -46,14 +54,6 @@
             "id": "d00efac7c970907dc7d027cc10e7a24c9ffc7519983d3c4ca4fd8dca2c716e62",
             "romtype": "MAINLINE",
             "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm/lineage-20.0-20250705-MAINLINE-waydroid_arm-vendor.zip/download",
-            "version": "20.0"
-        },
-        {
-            "datetime": 1751068800,
-            "filename": "lineage-20.0-20250628-MAINLINE-waydroid_arm-vendor.zip",
-            "id": "830fa6d3d79b471f796a791ef349002ab0c93b2a76c5aa4d6fb56af0d777f3fc",
-            "romtype": "MAINLINE",
-            "url": "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_arm/lineage-20.0-20250628-MAINLINE-waydroid_arm-vendor.zip/download",
             "version": "20.0"
         }
     ]
