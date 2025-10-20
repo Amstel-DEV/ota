@@ -63,14 +63,6 @@
             "romtype": "VANILLA",
             "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_x86_64/lineage-20.0-20250705-VANILLA-waydroid_x86_64-system.zip/download",
             "version": "20.0"
-        },
-        {
-            "datetime": 1751068800,
-            "filename": "lineage-20.0-20250628-VANILLA-waydroid_x86_64-system.zip",
-            "id": "071eccffdb51595574fb4e8346fc4f99535e1a82aafa4e5fd1f3b40a712bf2dd",
-            "romtype": "VANILLA",
-            "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_x86_64/lineage-20.0-20250628-VANILLA-waydroid_x86_64-system.zip/download",
-            "version": "20.0"
         }
     ]
 }
