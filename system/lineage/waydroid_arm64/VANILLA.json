@@ -1,6 +1,14 @@
 {
     "response": [
         {
+            "datetime": 1772323200,
+            "filename": "lineage-20.0-20260301-VANILLA-waydroid_arm64-system.zip",
+            "id": "ee664a970a91bdef763cdde2108ac55f2ab82ec3fb0d3fc9d97c3555c5499f31",
+            "romtype": "VANILLA",
+            "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_arm64/lineage-20.0-20260301-VANILLA-waydroid_arm64-system.zip/download",
+            "version": "20.0"
+        },
+        {
             "datetime": 1760140800,
             "filename": "lineage-20.0-20251011-VANILLA-waydroid_arm64-system.zip",
             "id": "3073a243a79dd5aa1de212d36055d87dbd1cec09b2fb79ef8f0168736eb5fafb",
@@ -70,14 +78,6 @@
             "id": "121de42a39204f493006cc040def2a6e5f21c6390c08ab4e54fcc1b21b5d80ea",
             "romtype": "VANILLA",
             "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_arm64/lineage-20.0-20250705-VANILLA-waydroid_arm64-system.zip/download",
-            "version": "20.0"
-        },
-        {
-            "datetime": 1751068800,
-            "filename": "lineage-20.0-20250628-VANILLA-waydroid_arm64-system.zip",
-            "id": "bd750c187bf54dc6b148854ef1a07d33d0cb9b88534dc4c8fb620842e63622e3",
-            "romtype": "VANILLA",
-            "url": "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_arm64/lineage-20.0-20250628-VANILLA-waydroid_arm64-system.zip/download",
             "version": "20.0"
         }
     ]
