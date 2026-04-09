@@ -24,8 +24,10 @@ function patch_waydroid() {
         echo "images.py already patched. Skipping..."
     else
         sed -i \
-            -e '38,45 s/^[[:space:]]*/&# /' \
-            -e '67,74 s/^[[:space:]]*/&# /' \
+            -e '39,39 s/^[[:space:]]*/&# /' \
+            -e '41,47 s/^[[:space:]]*/&# /' \
+            -e '69,69 s/^[[:space:]]*/&# /' \
+            -e '71,77 s/^[[:space:]]*/&# /' \
             "$image_helper"
         echo "images.py patch applied."
     fi
@@ -55,8 +57,10 @@ function restore_waydroid() {
 
     if grep -q "^[[:space:]]*#.*sha256sum" "$image_helper"; then
         sed -i \
-            -e '38,45 s/^# \?//' \
-            -e '67,74 s/^# \?//' \
+            -e '39,39 s/^# \?//' \
+            -e '41,47 s/^# \?//' \
+            -e '69,69 s/^# \?//' \
+            -e '71,77 s/^# \?//' \
             "$image_helper"
         echo "images.py restored."
     else
